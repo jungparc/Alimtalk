@@ -1,15 +1,15 @@
 ## Notification > KakaoTalk Bizmessage > Overview
 
-KakaoTalk Bizmessage provides AlimTalk and FriendTalk to send messages to KakaoTalk users based on mobile phone numbers, with no need of adding friends.
-RESTful API is provided for easy integration.
+KakaoTalk Bizmessage는 휴대폰 번호를 기반으로 친구 추가 없이 카카오톡 사용자에게 알림톡, 친구톡 형태의 메시지를 발송할 수 있는 서비스입니다.
+손쉬운 연동을 위한 RESTful API를 제공합니다.
 
-## AlimTalk vs FriendTalk
-| Category     | AlimTalk                                                     | FriendTalk                                                   |
-| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Message Type | Available to send informative messages                       | Available to send advertisement messages                     |
-| Target       | Friends not necessary(requires phone number information)    | Users who are friends to Plus Friend(requires phone number information) |
-| Format       | 1,000 characters including spaces, Korean or English + Link at the message bottom | - FriendTalk text: 1,000 characters of text in Korean or English + link button<br />- FriendTalk image: 400 characters of text + 1 page of image + link button |
-| Features     | - Restricted to informative biz messages <br />- Send by approved templates | - Delivery prohibited during night time(20:50~ 08:00 on the following day) |
+## 알림톡 vs 친구톡
+| 구분    | 알림톡                                    | 친구톡                                       |
+| ----- |----------------------------------------|-------------------------------------------|
+| 발송 내용 | 정보성 메시지 발송 가능                          | 광고성 메시지 발송 가능                             |
+| 발송 대상 | 친구 여부 관계없음(전화번호 정보 필요)                 | 카카오톡 채널과 친구를 맺은 이용자(전화번호 정보 필요)           |
+| 발송 형식 | 텍스트형<br>이미지형                           | 텍스트형<br>이미지형<br>와이드 이미지형<br>아이템리스트<br>캐러셀 |
+| 특이 사항 | - 정보형 비즈 메시지에 국한<br />- 승인된 템플릿 기반으로 발송 | - 야간 발송 제한(20:50~다음 날 08:00)              |
 
 ## 발송 전 유의사항
 * 알림톡 이용 시, 고객사는 다음과 같은 서비스 이용 유의 사항을 수신자에게 안내해야 합니다.
@@ -17,3 +17,14 @@ RESTful API is provided for easy integration.
   * 알림톡 수신을 원하지 않을 경우에 대해 다음의 내용을 참고하십시오.
     * 발신자의 연락처(고객센터 등)를 통하여 발신자에게 수신 거부 의사를 전달할 수 있도록 안내해야 합니다.
     * 알림톡이 수신된 채팅방의 상단 레이어에서 [알림톡 차단]을 선택하여 발신자를 차단할 수 있습니다.
+
+## 개인정보 수탁사 고지 안내
+고객사에서 NHN Cloud > Notification > KakaoTalk Bizmessage 서비스 이용 시, 고객사와 당사 간 개인정보 처리에 관한 업무 위수탁 관계가 발생하는 바 정보통신망법 및 개인정보보호법에 따라 위탁자인 고객사는 개인정보 처리방침을 통해 당사에 개인정보를 위탁한 현황(수탁자 및 업무의 내용)을 공개해야 합니다.
+
+이에, 당사에서는 고객사가 NHN Cloud의 KakaoTalk Bizmessage 서비스를 이용함에 있어 관련 법령을 준수하고, 위탁 현황 미공개로 인하여 과태료 등의 불이익을 받지 않도록 아래와 같이 가이드할 수 있습니다.
+
+(예시)<br>
+[개인정보 수탁사 고지 안내]<br>
+KakaoTalk Bizmessage 서비스 이용 시 고객사에서 운영하는 '개인정보 처리방침 > 위탁 현황'에 다음의 내용을 표기하십시오.<br>
+수탁사: 엔에이치엔<br>
+업무의 내용: 카카오톡 비즈 메시지 발송 대행<br>

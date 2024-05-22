@@ -1,52 +1,33 @@
 ## Notification > KakaoTalk Bizmessage > Plus Friend > Overview
+카카오 정책에 따라 카카오톡 비즈 메시지를 발송하려면 먼저 카카오톡채널 관리자센터에서 비즈니스 인증을 받은 채널을 개설해야 알림톡/친구톡 발송이 가능합니다. [[카카오 채널 생성 및 비즈니스 인증 가이드]](https://kakaobusiness.gitbook.io/main/channel/start)
 
-### Creating a PlusFriend
-To send KakaoTalk Bizmessages, a Plus Friend must be registered first. Plus Friend referst to a business ID of KakaoTalk, which is available for free on its website. <a target="_blank" href="https://center-pf.kakao.com">[Apply for Plus Friend]</a>
 
-<b>* As of May 24, 2017, Yellow ID is changed to Plus Friend.  </b>
+### 카카오톡 채널 생성
+채널 개설하기 상단 '정보 입력 가이드'를 클릭하면 관련 가이드를 참고할 수 있습니다.
 
-![[Figure 1] Creating Plus Friend](http://static.toastoven.net/prod_alimtalk/plus_friend_overview_01.png)
+1. [카카오톡 채널 관리자센터](https://accounts.kakao.com/login/?continue=https%3A%2F%2Fbusiness.kakao.com%2Fdashboard%2F#login)에 로그인합니다.
+    * 기업 대표 또는 공용 이메일로 가입하는 것을 권장드립니다. (담당자 개인 카카오톡 계정 이메일로 로그인 가능하나, 담당자 부재/퇴사 시 채널을 이관하는 경우 발생)
 
-<b> For authentication, settings must be changed to **Open Home to the Public**  after registration. </b>
-![[그림 2] 홈 공개 변경](http://static.toastoven.net/prod_alimtalk/plus_friend_overview_02.png)
+2. 내 채널 [새 채널 만들기] 버튼을 눌러 채널 개설하기 페이지로 이동하여 개설할 채널 정보를 입력합니다.
+    * 채널 이름은 채널 홈에 노출되는 이름으로, 채널명과 사업자등록증의 법인명이 동일하게 설정합니다. 사업 분야와 관련없는 이름은 ‘비즈니스 채널’ 전환의 심사 단계에서 반려 사유가 될 수 있습니다.
+    * 검색용 아이디는 카카오톡 앱에서 검색 시 표시되는 아이디입니다. 한 번 설정된 검색용 아이디는 변경이 불가합니다.
+    * 프로필 사진은 채널 등록 이후에도 설정하실 수 있습니다.
 
-### Status of Plus Friend
-#### Status of NHN Cloud Plus Friend
-* Refers to the status of Plus Friend who is registered to NHN Cloud.
-* Register your Plus Friend and authenticate tokens, in reference of the console guide, and the service is enabled.
+![그림1](https://static.toastoven.net/prod_alimtalk/KTB_Image_1.png)
 
-#### Profile Status of KakaoTalk Plus Friend
-* Refers to the status of sender key to send AlimTalk/FriendTalk.
-* May be blocked if profile is not in use for a long time or business information is not consistent.
-* If status is not normal, send request to NHN Cloud Customer Center, along with Plus Friend ID, to ask for the release of blockage.
+### 카카오톡 채널 설정
+채널 개설 완료 후 채널 정보를 설정하여 비즈니스 채널을 신청합니다.
 
-#### Status of KakoTalk Plus Friend
-* Refers to the status of KakaoTalk business ID.
-* May be blocked if Plus Friend is not in use for a long time.
-* If status is not normal, send request to NHN Cloud Customer Center, along with the Plus Friend ID, for the release of blockage.
+1. 카카오톡 채널 관리자센터에서 개설된 채널을 선택합니다. 채널 공개와 검색 허용을 'ON'으로 설정합니다.
 
-### 카카오톡 스팸 상태
-#### 카카오톡 채널 스팸 상태
-* 카카오톡 발신 프로필의 스팸 상태를 의미합니다.
-* 비즈메시지 운영정책을 위반할 경우 스팸 채널로 분류되어 해당 프로필을 이용한 활동이 제한될 수 있습니다.
-* 스팸 상태가 정상이 아닌 경우 NHN Cloud 고객 센터로 플러스친구 ID와 함께 차단 해제를 요청해 주시기 바랍니다.
+2. 비즈니스 채널 전환을 신청합니다. 모든 내용을 첨부/ 입력하시고 신청하면, 심사를 통해 전환 여부가 결정됩니다. (카카오에서 심사하며 영업일 기준 2~3일 소요됩니다.)
+    * 사업자등록증 및 재직증명서(대표자 신분증). 업종별 제출 서류 등이 필요합니다.
+    * 서류 제출 시 반드시 개인정보 마스킹 가이드를 참고하시기 바랍니다. 마스킹 누락 시 심사가 반려됩니다.
+    * 통신판매업, 의료기기판매업, 건강기능식품판매업의 경우 신고증을 첨부합니다.
+    * 입력한 비즈니스 정보의 기업명과 채널 이름이 다를 경우, 심사에 참고할 자료를 첨부합니다.
 
-#### 카카오톡 메시지 스팸 상태
-* 카카오톡 발신 프로필에서 발송하는 메시지의 스팸 상태를 의미합니다.
-* 비즈메시지 운영정책을 위반할 경우 스팸 채널로 분류되어 해당 프로필을 이용한 활동이 제한될 수 있습니다.
-* 스팸 상태가 정상이 아닌 경우 NHN Cloud 고객 센터로 플러스친구 ID와 함께 차단 해제를 요청해 주시기 바랍니다.
+![그림2](https://static.toastoven.net/prod_alimtalk/KTB_Image_1.png)
 
-### 최초 사용자 제한
-특정 기준을 충족하지 못한 발신 프로필은 어뷰징 방지를 위해 최초 사용자 제한이 적용되어 일부 기능에 제약을 받게 됩니다.
-
-### Restrictions for first user
-Sending Profiles that do not meet certain criteria are subject to first user restrictions to prevent abuse, which limits some features.
-#### Restriction items for first user
-1. Restriction on the daily amount of sending.
-2. Unable to add as a member to Group Profile
-3. When template variable is replaced and if the difference is greater than 14 characters, process it as message sending failure
-
-#### Release Criteria for first User Restrictions
-1. First user restriction is to be automatically lifted, when a newly registered Sending Profile and if Sending profile with the first user restriction lifted is existing in the same project.
-2. If there are more than 10 charging normally Sending Templates within a month of restriction creation of the first user Sending Profile, the restriction will be automatically lifted the next day.
-3. Other than that, if you need to release the first user restriction, please contact us separately.
+### 카카오톡 채널 등록
+1. 비즈니스 채널 전환이 완료(승인)되었다면, **Notification > KakaoTalk Bizmessage > 발신프로필 관리** 탭에서 해당 발신프로필(카카오톡 채널)을 등록합니다.
+    * 발신프로필 등록 상세 가이드는 [발신 프로필 관리](https://docs.nhncloud.com/ko/Notification/KakaoTalk%20Bizmessage/ko/common-console-guide/#_5)에서 확인할 수 있습니다.

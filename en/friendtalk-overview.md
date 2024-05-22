@@ -1,24 +1,28 @@
 ## Notification > KakaoTalk Bizmessage > FriendTalk > Overview
 
-FriendTalk enables to send advertisement messages to KakaoTalk users who become Plus Friend based on mobile phone numbers.  
-RESTful API is provided for easy integration.
+친구톡은 휴대폰 번호를 기반으로 내 카카오 채널의 친구 추가된 고객에게 이벤트, 행사 등 광고성 메시지를 포함한 다양한 메시지를 발송할 수 있는 서비스입니다.
+손쉬운 연동을 위한 RESTful API를 제공합니다.
 
-## Benefits
-* Send various promotional messages, including advertising messages, to users who are friends with you.
-* Send text and images with attachments at a lower cost than SMS.
-* If you attach an image, you can enter up to 400 characters of text. Otherwise, you can enter up to 1,000 characters.
-* Send a template with no set content and no registration, just free text.
-* If FriendTalk fails, you can send a text message instead.
-* According to the Information and Communication Network Act, sending advertising information is restricted from 20:50 to 08:00 the following day.
+## 특징
+* 친구를 맺은 이용자를 대상으로 광고성 메시지를 포함한 다양한 홍보 메시지를 발송할 수 있습니다.
+* LMS/MMS보다 저렴한 비용으로 텍스트 및 이미지를 첨부하여 발송할 수 있습니다.
+* 정해진 내용 없이 템플릿을 등록하지 않고, 자유롭게 텍스트로 발송할 수 있습니다.
+* 친구톡 실패 시 문자 메시지로 대체 발송 가능합니다.
+* 정보통신망법에 의거해 광고성 정보 발송 시 20:50~다음 날 08:00까지 발송 제한됩니다.
 
-|Category	|Description|
-|-- |-- |
-|Text	|Up to 1,000 characters of text + up to 5 link buttons|
-|Image	|Up to 400 characters of text + 1 image + up to 5 link buttons|
-|Wide image	|Up to 76 characters of text + 1 wide image + up to 2 link buttons|
-|Wide item list|	Text + item list image + up to 2 link buttons (horizontally aligned)<br><li>Requires a list of maximum 4 items / minimum 3 items.</li><li>Text phrases are limited to 25 characters for the first item and 30 characters for items 2-4.</li><li>You can only send ads.</li>|
-|Carousel feed|	Per 1 carousel: title (header) + text copy + link buttons (2/arranged horizontally) + send image for carousel<li>Requires a list of maximum 10 / minimum 2 carousel.</li><li>The title (header) is limited to 20 characters and the text copy to 180 characters.</li><li>Each carousel can have a maximum of two buttons and is sent horizontally aligned.</li><li>You can only send ads.</li>
+## 주요 기능
+* 메시지 발송, 조회, 이미지 관리 RESTful API를 제공합니다.
+* 콘솔에서는 메시지 발송, 조회, 이미지 관리 그리고 발송한 메시지의 통계 내역을 조회할 수 있습니다.
 
-## Main Features
-* RESTful APIs are provided to Send/Query Messages or Manage Images.
-* Console allows sending/querying messages, managing images, and queries statistics of sent messages.    
+
+## 친구톡 발송 지원 타입
+
+|구분	|설명| 카카오 이미지 업로드 규격 |
+|-- |-- | --|
+|텍스트	|최대 1,000자 텍스트+링크 버튼 최대 5개| 해당 없음 |
+|이미지	|최대 400자 텍스트+이미지 1장+링크 버튼 최대 5개| </li><li> 제한 사이즈 - 가로 500px 이상, 가로:세로 비율 2:1 이상 3:4 이하</li><li>파일형식 및 크기 : jpg, png / 최대 5MB |
+|와이드 이미지	|최대 76자 텍스트+와이드 이미지 1장+링크 버튼 최대 2개| </li><li> 제한 사이즈 - 가로 800px, 세로 600px</li><li>파일형식 및 크기 : jpg, png / 최대 5MB |
+|와이드 아이템 리스트|	텍스트+아이템 리스트 이미지+링크 버튼 최대 2개(가로 정렬)<br><li>최대 4개/최소 3개의 아이템 리스트가 필요합니다.</li><li>텍스트 문구는 첫 번째 아이템은 25자, 2~4번째 아이템은 30자로 제한됩니다.</li><li>광고 발송만 가능합니다.</li>| </li><li> 아이템 리스트 갯수에 맞춰서 최소 3장, 최대 4장 이미지를 업로드해서 사용합니다.</li><li>제한 사이즈 - 가로 400px, 세로 400px ~ 가로 800px, 세로 400px</li><li>비율 및 가로 픽셀 확인 X. 썸네일 크기에 맞추어 중앙 기준으로 크롭하여 노출</li><li>파일형식 및 크기 : jpg, png / 각 파일 최대 5MB |
+|캐러셀 피드형|	캐러셀 1개당: 제목(헤더)+텍스트 문구+링크 버튼(2개/가로 배열)+캐러셀용 이미지 발송<li>최대 10개/최소 2개의 캐러셀 리스트가 필요합니다.</li><li>제목(헤더)은 20자, 텍스트 문구는 180자로 제한됩니다.</li><li>캐러셀 하나 당 버튼은 최대 2개까지 가능하며 가로 정렬되어 발송됩니다.</li><li>광고 발송만 가능합니다.</li> | </li><li>캐러셀 리스트 갯수에 맞춰서 최소 2장, 최대 10장 이미지를 업로드해서 사용합니다. </li><li>제한 사이즈 - 가로 500px 이상, 가로:세로 비율 2:1 이상 3:4 이하</li><li>파일형식 및 크기 : jpg, png / 각 파일 최대 5MB |
+
+![그림1](https://static.toastoven.net/prod_alimtalk/KTB_Image_1_friendtalk.png)
