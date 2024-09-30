@@ -1,5 +1,7 @@
 ## Notification > KakaoTalk Bizmessage > Overview
 
+KakaoTalk Bizmessage provides AlimTalk and FriendTalk to send messages to KakaoTalk users based on mobile phone numbers, with no need of adding friends.
+RESTful API is provided for easy integration.
 
 ## AlimTalk vs FriendTalk
 | Category     | AlimTalk                                                     | FriendTalk                                                   |
